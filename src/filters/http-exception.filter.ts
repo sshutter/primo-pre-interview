@@ -17,7 +17,7 @@ export class HttpExceptionFilter implements ExceptionFilter {
     let errorCode = 'UNKNOWN_ERROR';
 
     if (exception instanceof BadRequestException) {
-      errorCode = 'INVALID_PAYLOAD';
+      errorCode = 'BAD_REQUEST';
     }
 
     if (exception instanceof InternalServerErrorException) {
