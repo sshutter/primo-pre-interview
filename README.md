@@ -1,7 +1,3 @@
-Here’s a **short, clean `README.md`** you can drop straight into Git 👌
-
----
-
 # NestJS Service
 
 ## To Start the Service
@@ -14,13 +10,9 @@ Here’s a **short, clean `README.md`** you can drop straight into Git 👌
    ```
 3. Generate an RSA **private key** and **public key** from
    [https://cryptotools.net/rsagen](https://cryptotools.net/rsagen)
-   and save them in the `keys/` folder
+   and save them in the `src/keys/` folder
 4. Start the service
 
    ```bash
    npm run start
    ```
-
-> ⚠️ Do not commit the `keys/` folder to version control.
-
----
