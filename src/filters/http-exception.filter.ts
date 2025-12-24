@@ -16,12 +16,8 @@ export class HttpExceptionFilter implements ExceptionFilter {
 
     let errorCode = 'UNKNOWN_ERROR';
 
-    if (exception instanceof BadRequestException) {
-      errorCode = 'BAD_REQUEST';
-    }
-
-    if (exception instanceof InternalServerErrorException) {
-      errorCode = 'INTERNAL_SERVER_ERROR';
+    if (exception.message) {
+      errorCode = exception.message;
     }
 
     return response.status(status).json({
